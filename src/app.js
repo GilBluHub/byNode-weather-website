@@ -9,6 +9,10 @@ const forecast = require('./utils/forecast')
 //--------------------------
 //Define path to express config
 
+//----- heroku server---------
+ 
+const port = process.env.PORT || 3000
+
 const publicDirectoryPath = path.join(__dirname,'../public')
 // __dirname = the corrent path to the dirctory , "../public" : adding the path to the public directory
 const viewPath=path.join(__dirname,'../templates/views') 
@@ -110,11 +114,13 @@ app.get('*',(req,res)=>{
 })
 
 // --- start the server ----
-app.listen(3000,() =>{
-    console.log('Server is up on port 3000')
+app.listen(port,() =>{
+    console.log('Server is up on port '+ port)
 })
 
-
+// app.listen(3000,() =>{
+//     console.log('Server is up on port 3000')
+// })
 
 
 // 3000 port- for common developer port only
@@ -129,9 +135,12 @@ app.listen(3000,() =>{
 // nodemon src/app.js
 
 //nodemon src/app.js -e js,hbs
+
+
 //-------- heroku -----
 //heroku -v
 //heroku login
+
 //------------- git --------------------------------
 // git --version
 // git init
@@ -139,6 +148,8 @@ app.listen(3000,() =>{
 // git add .
 // git commit -m "some describe"
 // git commit -m "Init commit"
+// git config --global user.email "blupub@gmail.com"
+// git config user.name GilBluHub
 //----------------------------------------------------------
 
 // app.get('/weather',(req,res)=>{
