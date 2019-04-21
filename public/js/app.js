@@ -2,7 +2,7 @@
 
 //puzzle.mead.io/puzzle
 
-console.log('clint side javascropt loaded')
+// console.log('clint side javascropt loaded')
 
 // fetch('http://localhost:3000/weather?address=london').then((response)=>{
 //     response.json().then((data)=>{

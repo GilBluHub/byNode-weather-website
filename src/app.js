@@ -132,11 +132,13 @@ app.listen(3000,() =>{
 //-------- heroku -----
 //heroku -v
 //heroku login
-//---------------------------------------------
+//------------- git --------------------------------
 // git --version
 // git init
 // git status
-// git add.
+// git add .
+// git commit -m "some describe"
+// git commit -m "Init commit"
 //----------------------------------------------------------
 
 // app.get('/weather',(req,res)=>{
