@@ -1,0 +1,33 @@
+1)
+npm init -y
+
+2)
+npm i express@4.16.4
+
+3)web-server/src/
+
+4)public 
+
+5) <link rel="stylesheet" href="./css/styles.css">
+
+6) npm "handlebars" -> templete engin : not to install
+
+7) npm hbs -> this is "hendlebar" for express : " npm i hbs@4.0.1 " 
+app.js -> "app.set('view engine','hbs')"
+hbs files -> only in "views" directory 
+
+we change the name of "views" directory to "templates" directory -> 
+const viewPath=path.join(__dirname,'../templates')
+app.set('views',viewPath) // the new path to TEMPLATES deirctory
+
+8) command line :" nodemon src/app.js -e js,hbs"
+aload nodeman to refresh also hbs files 
+
+9)to use the "utils" diretory :
+npm i request@2.88.0
+
+10)nodemon src/app.js -e js,hbs
+
+11)const messageOne = document.querySelector('#message-1')
+"#"=search by ID , 
+"."=search by CLASS 
