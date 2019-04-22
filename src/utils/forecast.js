@@ -19,7 +19,7 @@ const request=require('request')
           }else if(body.error){
               callback('un able to find location from darksky',undefined)
           }else {
-              callback(undefined,body.daily.data[0].summary + 'its the corrently ' + body.currently.temperature +' degress out ' + ' There is a ' + body.currently.precipProbability + ' % chance of rain.')
+              callback(undefined,body.daily.data[0].summary + 'its the corrently ' + body.currently.temperature +' C degress out ' + ' There is a ' + body.currently.precipProbability + ' % chance of rain.' + "latitude : "+ body.latitude + "  longitude : " + body.longitude )
           }
       })
   }
