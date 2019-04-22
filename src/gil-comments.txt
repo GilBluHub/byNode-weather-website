@@ -31,3 +31,17 @@ npm i request@2.88.0
 11)const messageOne = document.querySelector('#message-1')
 "#"=search by ID , 
 "."=search by CLASS 
+
+12) upload to github : 
+a- git status 
+show under "modified" what chages hasent bean upload to "stage" (RED)
+
+b- git add .
+b1- git status -> shaw the commited changes (GREEN)
+
+c- git commit -m "describe the corrent chanse " 
+
+d- git push
+this upload to git 
+
+e - git push heroku master
